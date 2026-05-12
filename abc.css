@@ -1,0 +1,24 @@
+#para1{
+    color: blue;
+    text-align: center;
+}
+
+.myclass{
+    color: rgb(53, 175, 5);
+}
+
+.class1{
+    text-align: center;
+}
+
+.class2{
+    color: firebrick;
+}
+
+p, h1{
+    color: coral;
+}
+
+div h1{
+    color: rgb(117, 13, 117);
+}
