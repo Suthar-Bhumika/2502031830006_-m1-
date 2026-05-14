@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="value"></p>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+    <p id="result5"></p>
+    <script>
+        alert("hello, It's my first javascript code.");
+        document.getElementById("demo").innerHTML="text by inner html";
+        var x=5;
+        var y=6;
+        document.getElementById("value").innerHTML="x="+x+", y="+y;
+        var a= x+y;
+        var b= x-y;
+        var c= x*y;
+        var d= x/y;
+        var m= x%y;
+        document.getElementById("result1").innerHTML="addition: "+a;
+        document.getElementById("result2").innerHTML="substraction: "+b;
+        document.getElementById("result3").innerHTML="multiplication: "+c;
+        document.getElementById("result4").innerHTML="division: "+d;
+        document.getElementById("result5").innerHTML="modulas: "+m;
+
+        var e=7.9;
+        var f= true;
+        var g="my name";
+        var h=null;
+        var i=undefined;
+        document.write(typeof(a)+"<br>");
+        document.write(typeof(e)+"<br>");
+        document.write(typeof(f)+"<br>");
+        document.write(typeof(g)+"<br>");
+        document.write(typeof(h)+"<br>");
+        document.write(typeof(i)+"<br>");
+
+        document.write("increment of x: "+(++x)+ "<br>");
+        document.write("decrement of x: "+(--x)+ "<br>");
+
+        document.write("x==y: "+(x==y)+ "<br>");
+        document.write("x!=y: "+(x!=y)+ "<br>");
+        document.write("x>y: "+(x>y)+ "<br>");
+        document.write("x>=y: "+(x>=y)+ "<br>");
+        document.write("x<y: "+(x<y)+ "<br>");
+        document.write("x<=y: "+(x<=y)+ "<br>");
+        document.write("x===y: "+(x===y)+ "<br>");
+        document.write("x!==y: "+(x!==y)+ "<br>");
+
+
+        
+    </script>
+</body>
+</html>
