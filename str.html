@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var str1="bhumika";
+    var str2=" suthar";
+    
+    // Pass everything as comma-separated arguments inside the parentheses
+    document.write("1. charAt: ", str1.charAt(1), "<br>"); 
+    document.write("2. concat: ", str1.concat(" ", str2), "<br>"); 
+    document.write("3. indexOf: ", str1.indexOf("m"), "<br>"); 
+    document.write("4. lastIndexOf: ", str1.lastIndexOf("a"), "<br>"); 
+    document.write("5. search: ", str1.search(/umi/), "<br>"); 
+    document.write("6. match: ", str1.match(/ka/), "<br>"); 
+    document.write("7. replace: ", str1.replace("bhumika", "Bhumika"), "<br>"); 
+    document.write("8. substr: ", str1.substr(3, 4), "<br>"); 
+    document.write("9. substring: ", str1.substring(1, 4), "<br>"); 
+    document.write("10. slice: ", str1.slice(-4), "<br>"); 
+
+    const upperStr = "BHUMIKA";
+    document.write("11. toLowerCase: ", upperStr.toLowerCase(), "<br>"); 
+    document.write("12. toLocaleLowerCase: ", upperStr.toLocaleLowerCase('tr-TR'), "<br>"); 
+    document.write("13. toUpperCase: ", str1.toUpperCase(), "<br>"); 
+    document.write("14. toLocaleUpperCase: ", str1.toLocaleUpperCase('en-US'), "<br>"); 
+    document.write("15. toString: ", str1.toString(), "<br>"); 
+    document.write("16. valueOf: ", str1.valueOf(), "<br>"); 
+    document.write("17. split: ", str1.split(""), "<br>"); 
+
+    const paddedStr = "   bhumika   ";
+    document.write("18. trim: ", paddedStr.trim(), "<br>"); 
+</script>
+
+</body>
+</html>
