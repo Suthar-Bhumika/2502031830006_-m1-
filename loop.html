@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>print number 1 to 10</h1>
+    <script>
+        var a;
+        for(a=1;a<=10;a++){
+            document.write("valu of a: "+a+"<br>")
+        }
+    </script>
+
+
+    <h1>Display Student name</h1>
+    <script>
+        var n;
+        var stu_name=["bhumika","bhumi","kajal"];
+        for(n=0;n<stu_name.length;n++){
+            document.write("student "+n+": "+stu_name[n]+"<br>");
+        }
+    </script>
+
+    <h1>calculate total marks</h1>
+    <script>
+        var m;
+        var total_mark=0;
+        var stu_mark=[78,99,79,80,69];
+        for(m=0;m<stu_mark.length;m++){
+            total_mark+=stu_mark[m];
+        }
+        document.write("total mark= "+total_mark);
+    </script>
+
+    <h1>generate multiplication table</h1>
+    <script>
+        var num;
+        var table=5;
+        for (num=1;num<=10;num++){
+            document.write(table + " * " + num +" = "+ (table*num) +"<br>");
+        }
+    </script>
+
+    <h1>print even number</h1>
+    <script>
+        var number;
+        var count=0;
+        for(number=0;count<10;number+=2){
+            document.write(number+" ");
+            count++;
+        }
+    </script>
+
+
+    <h1>print odd number</h1>
+    <script>
+        var number1;
+        var count1=1;
+        for(number1=1;count1<=10;number1+=2){
+            document.write(number1+" ");
+            count1++;
+        }
+    </script>
+
+    <h1>sum of array element</h1>
+    <script>
+        var t;
+        var sum=0;
+        var arr=[78,99,79,80,69];
+        for(t=0;t<arr.length;t++){
+           sum+=arr[t];
+        }
+        document.write("sum= "+sum);
+    </script>
+
+    <h1>reverse string</h1>
+    <script>
+        var b;
+        var str="bhumika";
+        var revstr="";
+        for(b=0;b<str.length;b++){
+            revstr=str[b]+revstr;
+        }
+        document.write("reversed string= "+revstr);
+    </script>
+
+    <h1></h1>
+
+</body>
+</html>
