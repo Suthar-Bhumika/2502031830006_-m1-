@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getElementById</h1>
+    <input type="text" id="mytext">
+    <button onclick="myfunction()">click</button>
+    <script>
+        function myfunction(){
+            var txt = document.getElementById("mytext");
+            alert(txt.value);
+        }
+    </script>
+
+    <h1>getElementsByName</h1>
+    <input type="text" name="mytext">
+    <button onclick="myfun()">click</button>
+    <script>
+        function myfun(){
+            var txt1 = document.getElementsByName("mytext")[0];
+            alert(txt1.value);
+        }
+    </script>
+
+    <h1>form using DOM</h1>
+    <form name="myform">
+        <input type="text" name="uname">
+        <input type="text" name="pword">
+        <input type="button" value="click" onclick="f()">
+    </form>
+    <script>
+        function f(){
+            var a=document.forms["myform"];
+            var u=a.uname.value;
+            var p=a.pword.value;
+            if(u=="admin" && p=="123"){
+                alert("valid");
+            }
+            else
+            {
+                alert("invalid");
+            }
+        }
+    </script>
+</body>
+</html>
