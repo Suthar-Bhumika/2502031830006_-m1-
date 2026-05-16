@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- create object using new keyword -->
+    <script>
+        var person= new Object();
+
+        person.firstname="bhumika";
+        person.lastname="suthar";
+
+        person.sayHi=()=>{
+            alert("Welcome "+person.firstname+" "+person.lastname);
+        }
+        person.sayHi();
+    </script>
+
+    <!-- create object using literal notation -->
+     <script>
+        var persons ={fname:"bhumi", lname: "suthar", 
+        SayHi: function()
+        {
+            alert("Welcome "+persons.fname+" "+persons.lname);
+        }
+        }
+        persons.SayHi();
+     </script>
+</body>
+</html>
