@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+        .hr1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+            padding: 30px 0px;
+            border-bottom: 1px solid gray;
+        }
+
+        .logo, .log_reg{
+            width: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img{
+            
+            width: 35%;
+        }
+
+        .search{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        input{
+            width: 70%;
+            font-size: 17px;
+            border: 1px solid gray;
+            padding: 8px;
+            border-radius: 25px;
+        }
+        .log_reg p a{
+            color: black;
+        }
+
+        nav{
+            width: 70%;
+        }
+        li{
+            display: inline;
+            list-style: none;
+            padding: 0px 20px;
+            font-size: 16px;
+        }
+
+        .hr2{
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            padding: 2px 0px;
+           
+            
+        }
+    select{
+        margin: 0%;
+        padding: 5px;
+        font-size: 15px;
+        width: 30%;
+        background-color: rgb(247, 79, 18);
+        border: none;
+        color: white;
+        border-radius: 20px;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .slider_image{
+        background-image: url("https://t4.ftcdn.net/jpg/06/06/08/59/360_F_606085957_m7lE4bgggPgS8q3IzKcT6bTTIlx5Dy6U.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:  80vh;
+    }
+    .slide_content{
+        width: 300px;
+        height: 200px;
+        position: relative;
+        top: 0px;
+        
+    }
+    .sc{
+        width: 80%;
+    }
+.product{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.pro_row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+.card{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(174, 177, 180);
+    
+}
+.card h5, .card p,.card button{
+    margin: 1px;
+    font-size: 18px;
+}
+
+.card button{
+    border-radius: 30px;
+    padding: 5px 10px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(33, 32, 61);
+    transition: 0.3s;
+}
+
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="hr1">
+            <div class="logo">
+                <img src="https://htmldemo.net/reid/reid/assets/img/logo/logo.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="search entire store here...">
+            </div>
+            <div class="log_reg">
+                <p><a href="#">Login</a> / <a href="#">Register</a></p>
+            </div>
+        </div>
+
+        <div class="hr2">
+            <select name="nav_slect" id="nav_slect">
+                <option value="All Categories">All Categories</option>
+                <option>Lighting</option>
+                <option>Accessories</option>
+                <option>Body Parts</option>
+                <option>Performance Filters</option>
+                <option>Engine Parts</option>
+                <option>More categories</option>
+            </select>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>Blog</li>
+                    <li>Pages</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="slider_image">
+            <div class="sc">
+            <div class="slide_content">
+                <h1>Welcome to <img src="https://htmldemo.net/reid/reid/assets/img/logo/logo.png" alt=""></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque?</p>
+            </div>
+            </div>
+        </div>
+
+<div class="product">
+    <h1>Our Product</h1>
+    <div class="pro_row">
+        <div class="card"><img src="https://htmldemo.net/reid/reid/assets/img/product/product24.jpg" alt=""><h5>premium shoes</h5><p>$89</p><button>Add to Cart</button></div>
+        <div class="card"><img src="https://htmldemo.net/reid/reid/assets/img/product/product17.jpg" alt=""><h5>premium shoes</h5><p>$89</p><button>Add to Cart</button></div>
+        <div class="card"><img src="https://htmldemo.net/reid/reid/assets/img/product/product22.jpg" alt=""><h5>premium shoes</h5><p>$89</p><button>Add to Cart</button></div>
+        <div class="card"><img src="https://htmldemo.net/reid/reid/assets/img/product/product5.jpg" alt=""><h5>premium shoes</h5><p>$89</p><button>Add to Cart</button></div>
+    </div>
+    <div class="pro_row">
+        <div class="card"><img src="https://htmldemo.net/reid/reid/assets/img/product/product16.jpg" alt=""><h5>premium shoes</h5><p>$89</p><button>Add to Cart</button></div>
+        <div class="card"><img src="https://htmldemo.net/reid/reid/assets/img/product/product20.jpg" alt=""><h5>premium shoes</h5><p>$89</p><button>Add to Cart</button></div>
+        <div class="card"><img src="https://htmldemo.net/reid/reid/assets/img/product/product8.jpg" alt=""><h5>premium shoes</h5><p>$89</p><button>Add to Cart</button></div>
+        <div class="card"><img src="https://htmldemo.net/reid/reid/assets/img/product/product3.jpg" alt=""><h5>premium shoes</h5><p>$89</p><button>Add to Cart</button></div>
+    </div>
+    <div class="pro_row">
+        <div class="card1"><img src="https://htmldemo.net/reid/reid/assets/img/bg/banner11.jpg" alt=""></div>
+        <div class="card1"><img src="https://htmldemo.net/reid/reid/assets/img/bg/banner12.jpg" alt=""></div>
+    </div>
+</div>
+
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
