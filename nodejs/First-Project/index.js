@@ -38,6 +38,6 @@ app.get('/about',(req, res)=>{
    res.redirect('..')
 })
 app.get('/download',(req, res)=>{
-  res.download('C:\Users\Student\Desktop\shortcut.txt', 'Download.txt')
+  res.download('./shortcut.txt', 'Download.txt')
 })
 
